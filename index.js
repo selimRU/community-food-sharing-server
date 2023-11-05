@@ -32,6 +32,7 @@ async function run() {
         await client.connect();
         const featureFoodsCollections = client.db("foodSharingDB").collection("featureFoods")
         const availableFoodCollections = client.db("foodSharingDB").collection("availableFoods")
+        const requestedFoodCollections = client.db("foodSharingDB").collection("requestedFood")
 
         // featured foods get api
         app.get('/api/v1/featureFood', async (req, res) => {
@@ -60,6 +61,12 @@ async function run() {
         app.post('/api/v1/availableFoodsAdd', async (req, res) => {
             const foods = req.body
             const result = await availableFoodCollections.insertOne(foods)
+            console.log(result);
+            res.send(result)
+        })
+        app.post('/api/v1/requestedFood', async (req, res) => {
+            const foods = req.body
+            const result = await requestedFoodCollections.insertOne(foods)
             console.log(result);
             res.send(result)
         })
