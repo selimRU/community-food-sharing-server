@@ -44,9 +44,23 @@ async function run() {
 
         // available foods get api
         app.get('/api/v1/availableFoods', async (req, res) => {
+            const page = parseInt(req.query.page)
+            console.log(page);
+            const size = parseInt(req.query.size)
             const query = {}
             console.log(query);
-            const result = await availableFoodCollections.find(query).toArray()
+            const result = await availableFoodCollections.find(query)
+                .skip(page * size)
+                .limit(size)
+                .toArray()
+            res.send(result)
+        })
+
+        // requested food get api
+        app.get('/api/v1/requestedFoodDisplayed', async (req, res) => {
+            const query = {}
+            console.log(query);
+            const result = await requestedFoodCollections.find(query).toArray()
             res.send(result)
         })
         // available food by id
@@ -55,6 +69,11 @@ async function run() {
             const food = { _id: new ObjectId(id) }
             const result = await availableFoodCollections.findOne(food)
             res.send(result)
+        })
+        // available food count
+        app.get('/api/v1/availableFoodsCount', async (req, res) => {
+            const count = await availableFoodCollections.estimatedDocumentCount()
+            res.send({ count })
         })
 
         // foods post api
@@ -70,7 +89,6 @@ async function run() {
             console.log(result);
             res.send(result)
         })
-
 
 
     } finally {
