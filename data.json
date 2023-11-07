@@ -4,7 +4,7 @@
       "Food_Image": "peaches.jpg",
       "Food_Quantity": 9,
       "Pickup_Location": "444 Pine Road",
-      "Expired_Time": "2023-12-08T14:30:00",
+      "Expired_Date": "2023-12-08",
       "Additional_Notes": "Ripe and delicious peaches",
       "Donator": {
         "Image": "donator29.jpg",
@@ -18,7 +18,7 @@
       "Food_Image": "canned-salmon.jpg",
       "Food_Quantity": 12,
       "Pickup_Location": "555 Cedar Lane",
-      "Expired_Time": "2023-11-30T10:15:00",
+      "Expired_Date": "2023-11-30",
       "Additional_Notes": "Canned pink salmon",
       "Donator": {
         "Image": "donator30.jpg",
@@ -32,7 +32,7 @@
       "Food_Image": "macaroni-and-cheese.jpg",
       "Food_Quantity": 7,
       "Pickup_Location": "789 Elm Street",
-      "Expired_Time": "2023-11-22T12:30:00",
+      "Expired_Date": "2023-11-22",
       "Additional_Notes": "Classic mac and cheese",
       "Donator": {
         "Image": "donator31.jpg",
@@ -46,7 +46,7 @@
       "Food_Image": "water.jpg",
       "Food_Quantity": 10,
       "Pickup_Location": "101 Pine Road",
-      "Expired_Time": "2023-11-26T11:45:00",
+      "Expired_Date": "2023-11-26",
       "Additional_Notes": "Purified drinking water",
       "Donator": {
         "Image": "donator32.jpg",
@@ -60,7 +60,7 @@
       "Food_Image": "canned-beef.jpg",
       "Food_Quantity": 8,
       "Pickup_Location": "222 Birch Street",
-      "Expired_Time": "2023-12-01T09:00:00",
+      "Expired_Date": "2023-12-01",
       "Additional_Notes": "Canned beef chunks",
       "Donator": {
         "Image": "donator33.jpg",
@@ -74,7 +74,7 @@
       "Food_Image": "frozen-fish.jpg",
       "Food_Quantity": 10,
       "Pickup_Location": "333 Oak Avenue",
-      "Expired_Time": "2023-11-29T10:45:00",
+      "Expired_Date": "2023-11-29",
       "Additional_Notes": "Assorted frozen fish",
       "Donator": {
         "Image": "donator34.jpg",
