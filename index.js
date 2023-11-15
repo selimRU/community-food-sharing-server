@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 // middleware
 app.use(cors({
-    origin: ['http://localhost:5173','https://community-food-sharing-70abe.web.app'],
+    origin: ['http://localhost:5173','https://tangerine-torte-c90da0.netlify.app','https://community-food-sharing-server-side-azure.vercel.app'],
     credentials: true
 }))
 app.use(express.json())
